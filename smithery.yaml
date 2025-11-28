@@ -1,14 +1,13 @@
 name: "@brightdataa/hide-mcp"
 version: "1.0.0"
-description: "Proof of Concept MCP server for namespace takeover. Benign execution only."
+description: "PoC MCP server for namespace takeover testing"
 
 mcp:
   server:
-    entrypoint: "src/inject.js"
+    entrypoint: src/inject.js
+    language: node
 
 runtime:
-  type: "node"
-
-metadata:
-  author: "Amazon Web Services Labs"
-  repo: "https://github.com/bughide010/sm1"
+  type: typescript
+  memory: 128
+  timeout: 10
